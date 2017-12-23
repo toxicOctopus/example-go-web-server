@@ -8,7 +8,7 @@ import (
 func ExampleExecute() int64 {
 	vm := otto.New()
 	vm.Run(`
-		try { eval('"use strict"; class foo {}'); } catch (e) { console.log(e); }
+	//	try { eval('"use strict"; class foo {}'); } catch (e) { console.log(e); }
 
     abc = 2 + 2;
 	console.log("The value of abc is " + abc); // 4`)
